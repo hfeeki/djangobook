@@ -29,6 +29,8 @@ local.properties
 .buildpath
 
 
+mysite.dv
+
 #################
 ## Visual Studio
 #################
