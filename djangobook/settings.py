@@ -1,4 +1,5 @@
 # Django settings for djangobook project.
+import os
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -8,6 +9,12 @@ ADMINS = (
 )
 
 MANAGERS = ADMINS
+
+'''
+    cd .. to parent directory, because our parent is in parent directory.
+    Need to be careful here, its waste my some time :)
+'''
+PROJECT_DIR=os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir))
 
 DATABASES = {
     'default': {
@@ -105,7 +112,11 @@ ROOT_URLCONF = 'djangobook.urls'
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'djangobook.wsgi.application'
 
-TEMPLATE_DIRS = ('C:/Django-1.4/prac/djangobook/templates',)
+#TEMPLATE_DIRS = ('C:/Django-1.4/prac/djangobook/templates',)
+#TEMPLATE_DIRS = (PROJECT_DIR+'/templates',)
+TEMPLATE_DIRS = (
+    os.path.join(PROJECT_DIR, 'templates').replace('\\','/'),
+)
 
 INSTALLED_APPS = (
     'django.contrib.auth',
