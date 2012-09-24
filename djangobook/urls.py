@@ -5,7 +5,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 
-from mysite.views import hello, current_datetime, hours_ahead
+from mysite.views import hello, current_datetime, hours_ahead, search_form, search, contact_form
 
 
 urlpatterns = patterns('',
@@ -21,6 +21,11 @@ urlpatterns = patterns('',
 
 
     ('^hello/$', hello),
+    ('^search_form/$', search_form),
+    ('^search/$', search),
+    ('^contact/$', contact_form),
+
+
     ('^time/$', current_datetime),
     (r'^time/plus/(\d{1,2})/$', hours_ahead),
 )

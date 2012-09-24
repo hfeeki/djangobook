@@ -1,6 +1,7 @@
 from django.db import models
 from django.forms import forms
 
+
 class Publisher(models.Model):
     name = models.CharField(max_length=30)
     address = models.CharField(max_length=50)
