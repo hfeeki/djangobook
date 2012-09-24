@@ -40,19 +40,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/djangobook/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="14" selection-start="765" selection-end="765" vertical-scroll-proportion="0.0">
+            <state line="9" column="81" selection-start="347" selection-end="347" vertical-scroll-proportion="0.29254302">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="inner.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/djangobook/inner.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="46" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="29" selection-start="362" selection-end="362" vertical-scroll-proportion="0.16314779">
+            <state line="15" column="17" selection-start="260" selection-end="273" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -129,16 +138,16 @@
         <option value="$PROJECT_DIR$/templates/search_form.html" />
         <option value="$PROJECT_DIR$/mysite/models.py" />
         <option value="$PROJECT_DIR$/templates/contact_form.html" />
-        <option value="$PROJECT_DIR$/djangobook/urls.py" />
         <option value="$PROJECT_DIR$/mysite/views.py" />
+        <option value="$PROJECT_DIR$/djangobook/inner.py" />
+        <option value="$PROJECT_DIR$/djangobook/urls.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1" />
-    <option name="y" value="1" />
     <option name="width" value="1364" />
-    <option name="height" value="726" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -427,7 +436,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1364" height="726" extended-state="0" />
+    <frame x="1" y="0" width="1364" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -565,13 +574,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/djangobook/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="14" selection-start="765" selection-end="765" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/contact_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="7" selection-start="754" selection-end="754" vertical-scroll-proportion="-20.923077">
@@ -581,10 +583,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="29" selection-start="362" selection-end="362" vertical-scroll-proportion="0.16314779">
+        <state line="15" column="17" selection-start="260" selection-end="273" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/djangobook/inner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="46" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/djangobook/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="81" selection-start="347" selection-end="347" vertical-scroll-proportion="0.29254302">
+          <folding />
         </state>
       </provider>
     </entry>

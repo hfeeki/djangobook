@@ -13,12 +13,18 @@ from django import forms
 
 '''
 '''
+def multi_urlconf(request):
+    return HttpResponse("This is multi url config page")
+
+'''
+'''
 class ContactForm(forms.Form):
     subject = forms.CharField(max_length=100)
     email = forms.EmailField(required=False, label='Your e-mail address')
     message = forms.CharField(widget=forms.Textarea)
 
-
+'''
+'''
 def contact_form(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
