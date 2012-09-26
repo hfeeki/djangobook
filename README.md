@@ -32,7 +32,9 @@
     + http://127.0.0.1:8000/api/person/female/xml/
 
 
+NOTE:
 
-Related doc: http://www.djangobook.com/en/2.0/index.html
+1. Related doc: http://www.djangobook.com/en/2.0/index.html
+2. I also use django piston for API : https://bitbucket.org/jespern/django-piston/wiki/Home
 
 
