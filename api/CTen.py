@@ -35,7 +35,7 @@ class CTenHandler(BaseHandler):
             elif MyDebug.getMethodName(path)=='person':
                 if MyDebug.getMethodName(path, 3)=='male':
                     return Person.men.all()
-                if MyDebug.getMethodName(path, 3)=='male':
+                if MyDebug.getMethodName(path, 3)=='female':
                     return Person.women.all()
                 return Person.people.all()
 

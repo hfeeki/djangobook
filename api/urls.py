@@ -27,8 +27,11 @@ urlpatterns = patterns('',
 
     # Person API
     url(r'^person/$', Resource(CTenHandler)),
+    url(r'^person/xml/$', Resource(CTenHandler), { 'emitter_format': 'xml' }),
     url(r'^person/male/$', Resource(CTenHandler)),
+    url(r'^person/male/xml/$', Resource(CTenHandler), { 'emitter_format': 'xml' }),
     url(r'^person/female/$', Resource(CTenHandler)),
+    url(r'^person/female/xml/$', Resource(CTenHandler), { 'emitter_format': 'xml' }),
 
 
 )

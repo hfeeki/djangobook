@@ -43,7 +43,7 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="26" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.0">
+            <state line="59" column="14" selection-start="2013" selection-end="2013" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -54,7 +54,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="24" selection-start="1147" selection-end="1147" vertical-scroll-proportion="0.0">
+            <state line="33" column="83" selection-start="1519" selection-end="1519" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -63,8 +63,19 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="714" selection-end="714" vertical-scroll-proportion="0.6201117">
+            <state line="24" column="0" selection-start="714" selection-end="714" vertical-scroll-proportion="0.2849162">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="37" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,7 +83,7 @@
       <file leaf-file-name="CTen.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/CTen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="77" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.0">
+            <state line="37" column="54" selection-start="1646" selection-end="1646" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -100,7 +111,6 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/templates/hours_ahead.html" />
         <option value="$PROJECT_DIR$/djangobook/settings.py" />
-        <option value="$PROJECT_DIR$/mysite/admin.py" />
         <option value="$PROJECT_DIR$/templates/serch_result.html" />
         <option value="$PROJECT_DIR$/templates/search_form.html" />
         <option value="$PROJECT_DIR$/templates/contact_form.html" />
@@ -109,6 +119,7 @@
         <option value="$PROJECT_DIR$/djangobook/urls.py" />
         <option value="$PROJECT_DIR$/api/CtenHandler.py" />
         <option value="$PROJECT_DIR$/utility/utility.py" />
+        <option value="$PROJECT_DIR$/mysite/admin.py" />
         <option value="$PROJECT_DIR$/mysite/models.py" />
         <option value="$PROJECT_DIR$/api/urls.py" />
         <option value="$PROJECT_DIR$/api/CTen.py" />
@@ -558,11 +569,6 @@
         <state line="17" column="7" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="37" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/search_results.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="49" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" />
@@ -593,19 +599,23 @@
         <state line="15" column="17" selection-start="260" selection-end="273" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/CTen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="77" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utility/utility.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="12" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="37" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="26" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.0">
+        <state line="59" column="14" selection-start="2013" selection-end="2013" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -614,14 +624,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="24" selection-start="1147" selection-end="1147" vertical-scroll-proportion="0.0">
+        <state line="33" column="83" selection-start="1519" selection-end="1519" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/CTen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="54" selection-start="1646" selection-end="1646" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="714" selection-end="714" vertical-scroll-proportion="0.6201117">
+        <state line="24" column="0" selection-start="714" selection-end="714" vertical-scroll-proportion="0.2849162">
           <folding />
         </state>
       </provider>
