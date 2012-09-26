@@ -28,11 +28,34 @@ class Author(models.Model):
     def __unicode__(self):
         return u'%s %s' % (self.first_name, self.last_name)
 
+
+class BookTitleManager(models.Manager):
+    def title_count(self, keyword):
+        return self.filter(title__icontains=keyword).count()
+
 class Book(models.Model):
     title = models.CharField(max_length=100)
     authors = models.ManyToManyField(Author)
     publisher = models.ForeignKey(Publisher)
     publication_date = models.DateField()
+    count_book_title = BookTitleManager()
 
     def __unicode__(self):
         return self.title
+
+
+class MaleManager(models.Manager):
+    def get_query_set(self):
+        return super(MaleManager, self).get_query_set().filter(sex='M')
+
+class FemaleManager(models.Manager):
+    def get_query_set(self):
+        return super(FemaleManager, self).get_query_set().filter(sex='F')
+
+class Person(models.Model):
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+    sex = models.CharField(max_length=1, choices=(('M', 'Male'), ('F', 'Female')))
+    people = models.Manager()
+    men = MaleManager()
+    women = FemaleManager()

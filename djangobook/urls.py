@@ -8,6 +8,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     ('^hello_inner/', include('djangobook.inner')), #redirect to another url page
+    ('^api/', include('api.urls')), #redirect to another url page
 )
 urlpatterns += patterns('mysite.views',
     ('^hello/$', 'hello'),
