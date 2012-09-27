@@ -38,7 +38,7 @@ class Book(models.Model):
     authors = models.ManyToManyField(Author)
     publisher = models.ForeignKey(Publisher)
     publication_date = models.DateField()
-    count_book_title = BookTitleManager()
+    #count_book_title = BookTitleManager()
 
     def __unicode__(self):
         return self.title

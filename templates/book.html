@@ -1,0 +1,10 @@
+<div style="width: 1000px; height: 600px; margin: 5px; background-color:#BB6666; ">
+{% block content %}
+    <h2>All Book</h2>
+    <ul>
+        {% for book in object_list %}
+            <li>{{ book.title }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+</div>

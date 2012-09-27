@@ -3,12 +3,43 @@ from django.http import Http404, HttpResponse, HttpResponseRedirect
 
 import datetime
 import logging
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response, get_object_or_404
+from django.views.generic import list_detail
+from models import Publisher, Author
 from mysite.models import Book
 from django import forms
 
+def author_detail(request, author_id):
+    # Delegate to the generic view and get an HttpResponse.
+    response = list_detail.object_detail(
+        request,
+        queryset = Author.objects.all(),
+        object_id = author_id,
+    )
+
+    # Record the last accessed date. We do this *after* the call
+    # to object_detail(), not before it, so that this won't be called
+    # unless the Author actually exists. (If the author doesn't exist,
+    # object_detail() will raise Http404, and we won't reach this point.)
+    now = datetime.datetime.now()
+    Author.objects.filter(id=author_id).update(last_accessed=now)
+
+    return response
 
 
+def books_by_publisher(request, name):
+
+    # Look up the publisher (and raise a 404 if it can't be found).
+    publisher = get_object_or_404(Publisher, name__iexact=name)
+
+    # Use the object_list view for the heavy lifting.
+    return list_detail.object_list(
+        request,
+        queryset = Book.objects.filter(publisher=publisher),
+        template_name = 'books_by_publisher.html',
+        template_object_name = 'book',
+        extra_context = {'publisher': publisher}
+    )
 
 
 '''
