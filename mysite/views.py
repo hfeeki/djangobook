@@ -2,13 +2,68 @@ from django.core.mail import send_mail
 from django.http import Http404, HttpResponse, HttpResponseRedirect
 
 import datetime
+import csv
 import logging
 from django.shortcuts import render_to_response, get_object_or_404
 from django.views.generic import list_detail
+from djangobook.settings import PROJECT_DIR
 from models import Publisher, Author
 from mysite.models import Book
 from django import forms
 
+#pip install reportlab
+#download: http://www.reportlab.com/software/opensource/rl-toolkit/download/
+
+from reportlab.pdfgen import canvas
+
+
+'''
+'''
+def hello_pdf(request):
+    # Create the HttpResponse object with the appropriate PDF headers.
+    response = HttpResponse(mimetype='application/pdf')
+    response['Content-Disposition'] = 'attachment; filename=hello.pdf'
+
+    # Create the PDF object, using the response object as its "file."
+    p = canvas.Canvas(response)
+
+    # Draw things on the PDF. Here's where the PDF generation happens.
+    # See the ReportLab documentation for the full list of functionality.
+    p.drawString(100, 100, "Hello world.")
+
+    # Close the PDF object cleanly, and we're done.
+    p.showPage()
+    p.save()
+    return response
+
+'''
+    Response with csv content
+'''
+
+UNRULY_PASSENGERS = [146,184,235,200,226,251,299,273,281,304,203]
+def unruly_passengers_csv(request):
+    # Create the HttpResponse object with the appropriate CSV header.
+    response = HttpResponse(mimetype='text/csv')
+    response['Content-Disposition'] = 'attachment; filename=mycsv.csv'
+
+    # Create the CSV writer using the HttpResponse as the "file."
+    writer = csv.writer(response)
+    writer.writerow(['Year', 'Unruly Airline Passengers'])
+    for (year, num) in zip(range(1995, 2006), UNRULY_PASSENGERS):
+        writer.writerow([year, num])
+
+    return response
+
+'''
+    Response with image
+'''
+def my_image(request):
+    image_data = open(PROJECT_DIR+"/templates/images/icpc.png", "rb").read()
+    return HttpResponse(image_data, mimetype="image/png")
+
+
+'''
+'''
 def author_detail(request, author_id):
     # Delegate to the generic view and get an HttpResponse.
     response = list_detail.object_detail(

@@ -42,11 +42,14 @@ urlpatterns = patterns('',
 )
 urlpatterns += patterns('mysite.views',
     ('^hello/$', 'hello'),
-    ('^hello/$', 'hello'),
     ('^search_form/$', 'search_form'),
     ('^search/$', 'search'),
     ('^contact/$', 'contact_form'),
 
+
+    ('^my_image/$', 'my_image'),
+    ('^hello_csv/$', 'unruly_passengers_csv'),
+    ('^hello_pdf/$', 'hello_pdf'),
 
     ('^time/$', 'current_datetime'),
     (r'^time/plus/(\d{1,2})/$', 'hours_ahead'), # min 1 digit, max 2 digit

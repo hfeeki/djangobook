@@ -1,0 +1,8 @@
+Django==1.4
+PIL==1.1.7
+South==0.7.5
+reportlab==2.5
+anyjson==0.3.3
+django-filebrowser==3.5.0
+django-grappelli==2.4.0
+uWSGI==1.2.4
